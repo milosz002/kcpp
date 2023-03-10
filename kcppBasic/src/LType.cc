@@ -6,21 +6,35 @@
  */
 
 #include<iostream>
+#include <vector>
 using namespace std;
+
+#define println(x) std::cout<<x<<endl
+
+void printvec(vector<int> vec){
+  for(int i = 0; i < vec.size(); i++){
+    //println(vec[i]);
+    cout<<vec[i]<<" ";
+    if(i%10 == 0){
+      cout<<endl;
+    }
+  }
+  cout<<endl;
+}
 
 int main()
 {
   int fVarA;
-  fVarA = 7;
+  // fVarA = 7;
   fVarA = 7.3;
 
   cout <<"fVarA: "<< fVarA << endl;
 
-  //float fVarA;              //Error
-  //float fVarB;
-  //fVarB = 7;
-  //fVarB = 7.3;
-  //cout <<"fVarB: "<< fVarB << endl;
+  // float fVarA;              //Error
+  // float fVarB;
+  // fVarB = 7;
+  // fVarB = 7.3;
+  // cout <<"fVarB: "<< fVarB << endl;
 
 
   char fVarC[10];   //deklaracja stringu o długości 10 znaków
@@ -36,6 +50,17 @@ int main()
   cout << "fVarD: "<< fVarD << endl;
   //cout << "fVarE: "<< fVarE << endl;
   //cout << "fVarF: "<< fVarF << endl;
+  
+  
+  // -----------------------------------------------
+  std::vector < int > vec;
+  for(int i = 0; i < 100; i++){
+    vec.push_back(i);
+  }
+  printvec(vec);
+  
+  
+  
 
   return 0;                              
 }
