@@ -7,6 +7,7 @@
 
 #include<iostream>
 using namespace std;
+#define println(x) std::cout<<x<<endl
 
 int main()
 {
@@ -26,6 +27,10 @@ int main()
 
   cout << "Nasz obiekt lokalny mm (tutaj int) ma rozmiar : "
     << sizeof(mm) << endl ;
+    
+  println("test1");
+  println("test1");
+  println("test1");
 
 
   return 0;                 

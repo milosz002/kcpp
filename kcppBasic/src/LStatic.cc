@@ -10,31 +10,39 @@ using namespace std;
 
 //int comp(int c); //niepotrzebna gdy funkcja jest zdefiniowana przed funkcja main
 
-// static int ncall = 0;
+static int ncall = 0;
 
 //----------------------------------------------
 int comp(int c) {
-	static int ncall = 0;
+	static int ncall = 0; // w funkcji
 	ncall++;
 	if(!c)
 		return ncall;
 	return c;
 }
 
-/* //--- Prosze sprawdzic czy to dziala ----------
- * void comp1(){
- *   ncall++;
- * } */
+//--- Prosze sprawdzic czy to dziala ----------
+
+void comp1(){
+  ncall++; // globalna
+}
 
 //----------------------------------------------
 int main(){
 	int a = 5, b = -10;
 
 	cout << comp(a) << ' ' << comp(b);
-	cout << "\nFunkcja zostala wywolana " << comp(0) << " razy.\n";
+	cout << "\nFunkcja zostala wywolana " << comp(0) << " razy.\n"; // tutaj wypisze ncall z funkcji
 
-	/* comp1();
-   * cout << ncall << endl; */
+	 comp1();
+	 comp1();
+	 comp1();
+	 comp1();
+	 comp1();
+	 comp1();
+	 comp1();
+	 comp1();
+	 cout << ncall << endl; // tutaj z globalnej ncall wypisze
 
 	return 0;
 }

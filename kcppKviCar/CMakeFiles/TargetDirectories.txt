@@ -1,0 +1,3 @@
+/home/student/Dokumenty/MJkpp/kcpp/kcppKviCar/CMakeFiles/CarFactory.dir
+/home/student/Dokumenty/MJkpp/kcpp/kcppKviCar/CMakeFiles/edit_cache.dir
+/home/student/Dokumenty/MJkpp/kcpp/kcppKviCar/CMakeFiles/rebuild_cache.dir

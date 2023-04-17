@@ -51,5 +51,7 @@ int main()
     cout << "Hello, Ford-car owner!: " << Maybach << endl;
     //cout << "Hello, Ford-car owner!: " << RollsRoyce << endl;
   }
+  
+  cout<<my_car_brand[0]<<endl;
   return 0;                              
 }
